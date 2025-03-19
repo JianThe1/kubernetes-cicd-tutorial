@@ -21,7 +21,6 @@ jobs:
           registry: ghcr.io
           username: ${{ OWNER_LC }}
           password: ${{ secrets.CR_PAT }}
-     
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Build and push Docker image
